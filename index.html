@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Form-data</title>
+</head>
+<body>
+    <!-- form starts -->
+    <div class="container">
+    <form id="myForm">
+        <div class="form-group">
+          <label for="email">Product Name</label>
+          <input required type="text" class="form-control" id="name" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="text">Price</label>
+            <input required type="text" class="form-control" id="price" placeholder="text">
+        </div>
+
+        <div class="form-group">
+            <label for="desc">Description</label>
+            <textarea required class="form-control" id="desc" rows="3"></textarea>
+          </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select required class="form-control" id="category">
+            <option>Mobile</option>
+            <option>EarBuds</option>
+            <option>PowerBank</option>
+            <option>Charger</option>
+            <option>Laptop</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="qty">Quantity</label>
+            <select 
+           required class="form-control" id="qty">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+        <!-- <div class="form-group">
+          <label for="qty">Quantity</label>
+          <select multiple class="form-control" id="qty">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div> -->
+
+        <button class="btn btn-dark "id="submit"> Add Product</button>
+        
+      </form>
+    </div>
+
+    <!-- form ends -->
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th scope="col">Sr.No</th>
+                    <th scope="col">Product Number</th>
+                    <th scope="col">Price </th>
+                    <th scope="col">description</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr class="">
+                    <td scope="row">R1C1</td>
+                    <td>R1C2</td>
+                    <td>R1C3</td>
+                </tr>
+                <tr class="">
+                    <td scope="row">Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+    <!--  show -->
+<!-- <button></button> -->
+    <!-- <button class="btn btn-warning" id="shw">show</button> -->
+    <!-- js files bootstrap -->
+    <!-- <script src="./app.js"></script> -->
+    <script src="./new.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
